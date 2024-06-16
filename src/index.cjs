@@ -4,7 +4,13 @@ const cors = require('cors');
 const app = express();
 const port = 5000;
 
-app.use(cors());
+const corsOptions = {
+    origin: '*',
+    methods: 'GET, HEAD, PUT, PATCH, POST, DELETE',
+    allowedHeaders: 'Content-Type, Authorization',
+}
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 app.post('/send-email', async (req, res) => {
