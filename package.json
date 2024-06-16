@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/index.cjs",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.cjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "ThunderBot, Renato Franco",
+  "license": "ISC",
+  "description": "ThunderBot, Equipe de Robótica de São Borja",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "resend": "^3.3.0"
+  }
+}
