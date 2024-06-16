@@ -8,7 +8,10 @@ services:
     ports:
       - '5000:5000'
     environment:
-      - RESEND_API_KEY={RESEND_API_KEY}
-    volumes:
-      - .:/app
-      - /app/node_modules
+      - RESEND_API_KEY=${RESEND_API_KEY}
+    networks:
+      - thunderbot-network
+
+networks:
+  thunderbot-network:
+    driver: bridge
